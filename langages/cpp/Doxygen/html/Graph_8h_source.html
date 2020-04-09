@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIEGE:  Fichier source de include/model/Graph.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIEGE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Graph_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Graph.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Graph_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GRAPH_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GRAPH_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Node_8h.html">Node.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Edge_8h.html">Edge.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../TinyXML/tinyxml.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classGraph.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGraph.html">Graph</a>{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classGraph.html#afc5ef9d72cc2c509814200791eaef62c">Graph</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classGraph.html#af5a604e5e9e4d68dbc10b312e59f678f">~Graph</a>();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#aa71d36872f416feaa853788a7a7a7ef8">Clear</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classGraph.html#aef8278f246e6a23fbae2e4ec8e503114">CreateNode</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classGraph.html#aef8278f246e6a23fbae2e4ec8e503114">CreateNode</a>(std::string name);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classGraph.html#aef8278f246e6a23fbae2e4ec8e503114">CreateNode</a>(std::string name, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::vector&lt;Edge*&gt; <a class="code" href="classGraph.html#a1fe6b59938fe8daeb1611a89440388a8">ConnectNodes</a>(<a class="code" href="classNode.html">Node</a>* fromNode, <a class="code" href="classNode.html">Node</a>* toNode);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::vector&lt;Edge*&gt; <a class="code" href="classGraph.html#a1fe6b59938fe8daeb1611a89440388a8">ConnectNodes</a>(<a class="code" href="classNode.html">Node</a>* fromNode, <a class="code" href="classNode.html">Node</a>* toNode, <span class="keywordtype">bool</span> isBidirectional);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::vector&lt;Edge*&gt; <a class="code" href="classGraph.html#a1fe6b59938fe8daeb1611a89440388a8">ConnectNodes</a>(<a class="code" href="classNode.html">Node</a>* fromNode, <a class="code" href="classNode.html">Node</a>* toNode, <span class="keywordtype">bool</span> isBidirectional, std::string edgeName);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::vector&lt;Edge*&gt; <a class="code" href="classGraph.html#a1fe6b59938fe8daeb1611a89440388a8">ConnectNodes</a>(<a class="code" href="classNode.html">Node</a>* fromNode, <a class="code" href="classNode.html">Node</a>* toNode, std::string edgeName);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#aae9b57b3b31514f96867fdd9035e4d6e">DeleteNode</a>(<a class="code" href="classNode.html">Node</a>* node);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a4c217c707882130f5bdc03cdaf8c2ce2">DeleteEdge</a>(<a class="code" href="classEdge.html">Edge</a>* edge);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a4c217c707882130f5bdc03cdaf8c2ce2">DeleteEdge</a>(<a class="code" href="classEdge.html">Edge</a>* edge, <span class="keywordtype">bool</span> removeAllReverses);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string <a class="code" href="classGraph.html#a7ef596a0c429a1a74709cf14d8fa15d2">ToString</a>();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::vector&lt;Node*&gt; <a class="code" href="classGraph.html#aa161fc80f595c6cec6023b32467de8f7">GetNodes</a>();</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a127c4e9d820b071f56acfe596278f030">ExportDot</a>(std::string pathDot);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a127c4e9d820b071f56acfe596278f030">ExportDot</a>(std::string pathDot, <span class="keywordtype">float</span> scale);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a127c4e9d820b071f56acfe596278f030">ExportDot</a>(std::string pathDot, std::string pathPng);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a127c4e9d820b071f56acfe596278f030">ExportDot</a>(std::string pathDot, std::string pathPng, std::string pathSvg);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a127c4e9d820b071f56acfe596278f030">ExportDot</a>(std::string pathDot, std::string pathPng, <span class="keywordtype">float</span> scale);</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#a127c4e9d820b071f56acfe596278f030">ExportDot</a>(std::string pathDot, std::string pathPng, std::string pathSvg, <span class="keywordtype">float</span> scale);</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGraph.html#af98b268057a82169fadef25717c0bfad">ImportGraphml</a>(std::string path);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classGraph.html#a0f127540976b5e16f44112c27dc4b1e2">  134</a></span>&#160;    std::vector&lt;Node*&gt; <a class="code" href="classGraph.html#a0f127540976b5e16f44112c27dc4b1e2">nodes</a>;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    TiXmlElement* <a class="code" href="classGraph.html#ace35fe51708fb67778a40b2ead7330ac">FindXmlChild</a>(TiXmlElement* xmlSuper, <span class="keyword">const</span> <span class="keywordtype">char</span>* childTag);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    std::vector&lt;TiXmlElement*&gt; <a class="code" href="classGraph.html#a7a211412686a441fcc4a02ba00ddea66">FindXmlChilds</a>(TiXmlElement* xmlSuper, <span class="keyword">const</span> <span class="keywordtype">char</span>* childsTag);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classGraph_html_a0f127540976b5e16f44112c27dc4b1e2"><div class="ttname"><a href="classGraph.html#a0f127540976b5e16f44112c27dc4b1e2">Graph::nodes</a></div><div class="ttdeci">std::vector&lt; Node * &gt; nodes</div><div class="ttdoc">List of nodes</div><div class="ttdef"><b>Definition:</b> <a href="Graph_8h_source.html#l00134">Graph.h:134</a></div></div>
+<div class="ttc" id="classGraph_html_a7ef596a0c429a1a74709cf14d8fa15d2"><div class="ttname"><a href="classGraph.html#a7ef596a0c429a1a74709cf14d8fa15d2">Graph::ToString</a></div><div class="ttdeci">std::string ToString()</div><div class="ttdoc">To string</div></div>
+<div class="ttc" id="Edge_8h_html"><div class="ttname"><a href="Edge_8h.html">Edge.h</a></div></div>
+<div class="ttc" id="classGraph_html_aa161fc80f595c6cec6023b32467de8f7"><div class="ttname"><a href="classGraph.html#aa161fc80f595c6cec6023b32467de8f7">Graph::GetNodes</a></div><div class="ttdeci">std::vector&lt; Node * &gt; GetNodes()</div><div class="ttdoc">Nodes getter</div></div>
+<div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdoc">Node of the graph</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00013">Node.h:13</a></div></div>
+<div class="ttc" id="classGraph_html"><div class="ttname"><a href="classGraph.html">Graph</a></div><div class="ttdoc">Collections of nodes and edges</div><div class="ttdef"><b>Definition:</b> <a href="Graph_8h_source.html#l00014">Graph.h:14</a></div></div>
+<div class="ttc" id="classGraph_html_a1fe6b59938fe8daeb1611a89440388a8"><div class="ttname"><a href="classGraph.html#a1fe6b59938fe8daeb1611a89440388a8">Graph::ConnectNodes</a></div><div class="ttdeci">std::vector&lt; Edge * &gt; ConnectNodes(Node *fromNode, Node *toNode)</div><div class="ttdoc">Create an edge between two nodes (the edge will be unnamed and without reverse edge)</div></div>
+<div class="ttc" id="classGraph_html_af98b268057a82169fadef25717c0bfad"><div class="ttname"><a href="classGraph.html#af98b268057a82169fadef25717c0bfad">Graph::ImportGraphml</a></div><div class="ttdeci">void ImportGraphml(std::string path)</div><div class="ttdoc">Read GraphML file to instanciate C++ objects</div></div>
+<div class="ttc" id="Node_8h_html"><div class="ttname"><a href="Node_8h.html">Node.h</a></div></div>
+<div class="ttc" id="classGraph_html_a4c217c707882130f5bdc03cdaf8c2ce2"><div class="ttname"><a href="classGraph.html#a4c217c707882130f5bdc03cdaf8c2ce2">Graph::DeleteEdge</a></div><div class="ttdeci">void DeleteEdge(Edge *edge)</div><div class="ttdoc">Delete an edge (reverse edges will be kept)</div></div>
+<div class="ttc" id="classGraph_html_aa71d36872f416feaa853788a7a7a7ef8"><div class="ttname"><a href="classGraph.html#aa71d36872f416feaa853788a7a7a7ef8">Graph::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Call destruction of all nodes and edges</div></div>
+<div class="ttc" id="classEdge_html"><div class="ttname"><a href="classEdge.html">Edge</a></div><div class="ttdoc">Edge of the graph</div><div class="ttdef"><b>Definition:</b> <a href="Edge_8h_source.html#l00012">Edge.h:12</a></div></div>
+<div class="ttc" id="classGraph_html_ace35fe51708fb67778a40b2ead7330ac"><div class="ttname"><a href="classGraph.html#ace35fe51708fb67778a40b2ead7330ac">Graph::FindXmlChild</a></div><div class="ttdeci">TiXmlElement * FindXmlChild(TiXmlElement *xmlSuper, const char *childTag)</div><div class="ttdoc">Find a child with given tag from an XML element</div></div>
+<div class="ttc" id="classGraph_html_a127c4e9d820b071f56acfe596278f030"><div class="ttname"><a href="classGraph.html#a127c4e9d820b071f56acfe596278f030">Graph::ExportDot</a></div><div class="ttdeci">void ExportDot(std::string pathDot)</div><div class="ttdoc">Convert C++ instances to DOT text (nodes will have free positions)</div></div>
+<div class="ttc" id="classGraph_html_aef8278f246e6a23fbae2e4ec8e503114"><div class="ttname"><a href="classGraph.html#aef8278f246e6a23fbae2e4ec8e503114">Graph::CreateNode</a></div><div class="ttdeci">Node * CreateNode()</div><div class="ttdoc">Add a new node (unnamed and free node)</div></div>
+<div class="ttc" id="classGraph_html_afc5ef9d72cc2c509814200791eaef62c"><div class="ttname"><a href="classGraph.html#afc5ef9d72cc2c509814200791eaef62c">Graph::Graph</a></div><div class="ttdeci">Graph()</div><div class="ttdoc">Default constructor</div></div>
+<div class="ttc" id="classGraph_html_aae9b57b3b31514f96867fdd9035e4d6e"><div class="ttname"><a href="classGraph.html#aae9b57b3b31514f96867fdd9035e4d6e">Graph::DeleteNode</a></div><div class="ttdeci">void DeleteNode(Node *node)</div><div class="ttdoc">Delete a node, incoming and outcoming edges</div></div>
+<div class="ttc" id="classGraph_html_af5a604e5e9e4d68dbc10b312e59f678f"><div class="ttname"><a href="classGraph.html#af5a604e5e9e4d68dbc10b312e59f678f">Graph::~Graph</a></div><div class="ttdeci">~Graph()</div><div class="ttdoc">Destructor : call destruction of all nodes and edges</div></div>
+<div class="ttc" id="classGraph_html_a7a211412686a441fcc4a02ba00ddea66"><div class="ttname"><a href="classGraph.html#a7a211412686a441fcc4a02ba00ddea66">Graph::FindXmlChilds</a></div><div class="ttdeci">std::vector&lt; TiXmlElement * &gt; FindXmlChilds(TiXmlElement *xmlSuper, const char *childsTag)</div><div class="ttdoc">Find all children with given tag from an XML element</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_5c067e43b62dc1a915e487a737196819.html">model</a></li><li class="navelem"><a class="el" href="Graph_8h.html">Graph.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

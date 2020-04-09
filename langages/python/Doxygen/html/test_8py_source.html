@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIEGE:  Fichier source de test.py</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIEGE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('test_8py_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">test.py</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="test_8py.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacetest.html">    1</a></span>&#160;<span class="keyword">import</span> LIEGE</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> os</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"># OS-independant way to access to input and output test files</span></div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="namespacetest.html#aef9b45c50a8ba716700b5a16b31072d9">    5</a></span>&#160;pathIn = os.path.join(<span class="stringliteral">&#39;tests&#39;</span>, <span class="stringliteral">&#39;in&#39;</span>)</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacetest.html#a4cb5ffaa6a4b63e303d2128506c05f96">    6</a></span>&#160;pathOut = os.path.join(<span class="stringliteral">&#39;tests&#39;</span>, <span class="stringliteral">&#39;out&#39;</span>)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"># Fonction to export a graph to PNG with free positions</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">    9</a></span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, filename):</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    graph.ExportDot(os.path.join(pathOut, filename + <span class="stringliteral">&#39;.dot&#39;</span>), pathPng = os.path.join(pathOut, filename + <span class="stringliteral">&#39;.png&#39;</span>), scale = 0)</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"># Create a collection of nodes and edges</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespacetest.html#a8ca49c796430e66a10450bfc2d218c81">   13</a></span>&#160;graph = <a class="code" href="classLIEGE_1_1Graph.html">LIEGE.Graph</a>()</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"># Import nodes and edges from GraphML file generated by yEd</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;graph.ImportGraphml(os.path.join(pathIn, <span class="stringliteral">&#39;simple.graphml&#39;</span>))</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"># Print all nodes</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordflow">for</span> node <span class="keywordflow">in</span> graph.nodes:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    print(node)</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"># Print all edges</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordflow">for</span> edge <span class="keywordflow">in</span> graph.edges:</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    print(edge)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"># Generate DOT, PNG and SVG file with GraphViz with positions from GraphML file</span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacetest.html#acec6d8ad52a28972fa74e071c1a63b6a">   27</a></span>&#160;graph.ExportDot(os.path.join(pathOut, <span class="stringliteral">&#39;simpleFixed.dot&#39;</span>), pathPng = os.path.join(pathOut, <span class="stringliteral">&#39;simpleFixed.png&#39;</span>), pathSvg = os.path.join(pathOut, <span class="stringliteral">&#39;simpleFixed.svg&#39;</span>), scale = 0.02)</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"># Generate DOT, PNG and SVG file with GraphViz with free positions</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;graph.ExportDot(os.path.join(pathOut, <span class="stringliteral">&#39;simpleFree.dot&#39;</span>), pathPng = os.path.join(pathOut, <span class="stringliteral">&#39;simpleFree.png&#39;</span>), pathSvg = os.path.join(pathOut, <span class="stringliteral">&#39;simpleFree.svg&#39;</span>), scale = 0)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"># Clear and create step-by-step an new graph from scratch</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;graph.Clear()</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch00&#39;</span>)</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacetest.html#ad227651ce1cba76af46fb8b2dfaa896b">   35</a></span>&#160;nodeA = graph.CreateNode(<span class="stringliteral">&#39;A&#39;</span>)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch01&#39;</span>)</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacetest.html#a0d6697fb2b13737a4cf47139b04caa5e">   37</a></span>&#160;nodeB = graph.CreateNode(<span class="stringliteral">&#39;B&#39;</span>)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch02&#39;</span>)</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespacetest.html#ae101cb2d35ce333ce04a4d92955e4048">   39</a></span>&#160;edgeAB = graph.ConnectNodes(nodeA, nodeB, isBidirectional = <span class="keyword">False</span>, edgeName = <span class="stringliteral">&#39;A to B&#39;</span>)[0]</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch03&#39;</span>)</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacetest.html#a949bfe39811d22221d11e8f6c36578b6">   41</a></span>&#160;nodeC = graph.CreateNode(<span class="stringliteral">&#39;C&#39;</span>)</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch04&#39;</span>)</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespacetest.html#a5a54d2d6392a28cfcbb73cd03e71854a">   43</a></span>&#160;edgeBC = graph.ConnectNodes(nodeB, nodeC, isBidirectional = <span class="keyword">False</span>, edgeName = <span class="stringliteral">&#39;B to C&#39;</span>)[0]</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch05&#39;</span>)</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacetest.html#ac64d157c3fc9dbc80eaee1aefd119df9">   45</a></span>&#160;nodeD = graph.CreateNode(<span class="stringliteral">&#39;D&#39;</span>)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch06&#39;</span>)</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacetest.html#a2ac94a872871b3aed3dae75132662413">   47</a></span>&#160;edgeCD = graph.ConnectNodes(nodeC, nodeD, isBidirectional = <span class="keyword">False</span>, edgeName = <span class="stringliteral">&#39;C to D&#39;</span>)[0]</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch07&#39;</span>)</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacetest.html#abad0e5ca459be6b06c2e4fdb93d4baca">   49</a></span>&#160;edgeDA = graph.ConnectNodes(nodeD, nodeA, isBidirectional = <span class="keyword">False</span>, edgeName = <span class="stringliteral">&#39;D to A&#39;</span>)[0]</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch08&#39;</span>)</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="namespacetest.html#a9cbe92f0b4a11320665fc6b436807a36">   51</a></span>&#160;nodeE = graph.CreateNode(<span class="stringliteral">&#39;E&#39;</span>)</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch09&#39;</span>)</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespacetest.html#a643a20c0c59588a0f741a6095e2025fd">   53</a></span>&#160;edgeAE, edgeEA = graph.ConnectNodes(nodeA, nodeE, isBidirectional = <span class="keyword">True</span>, edgeName = <span class="stringliteral">&#39;A - E&#39;</span>)</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch10&#39;</span>)</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespacetest.html#aa74b9360ff3da924668c43afe0b19a4d">   55</a></span>&#160;edgeDE, edgeED = graph.ConnectNodes(nodeD, nodeE, isBidirectional = <span class="keyword">True</span>, edgeName = <span class="stringliteral">&#39;D - E&#39;</span>)</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch11&#39;</span>)</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;graph.DeleteNode(nodeA)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch12&#39;</span>)</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacetest.html#abfff2d2f752325d0984d6c5abdc32782">   59</a></span>&#160;graph.DeleteEdge(edgeED, removeAllReverses = <span class="keyword">False</span>)</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch13&#39;</span>)</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;graph.DeleteEdge(edgeCD, removeAllReverses = <span class="keyword">False</span>)</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch14&#39;</span>)</div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespacetest.html#ac93f749e7d162d65cb190209d017ebae">   63</a></span>&#160;edgeBE, edgeEB = graph.ConnectNodes(nodeB, nodeE, isBidirectional = <span class="keyword">True</span>, edgeName = <span class="stringliteral">&#39;B - E&#39;</span>)</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch15&#39;</span>)</div><div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="namespacetest.html#a2f57c0c41adef92db30a7377d153374d">   65</a></span>&#160;edgeCD, edgeDC = graph.ConnectNodes(nodeC, nodeD, isBidirectional = <span class="keyword">True</span>, edgeName = <span class="stringliteral">&#39;C - D&#39;</span>)</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch16&#39;</span>)</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;graph.DeleteNode(nodeE)</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch17&#39;</span>)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;graph.DeleteEdge(edgeCD, removeAllReverses = <span class="keyword">True</span>)</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch18&#39;</span>)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;graph.DeleteNode(nodeD)</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch19&#39;</span>)</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;graph.DeleteNode(nodeB)</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch20&#39;</span>)</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;graph.DeleteNode(nodeC)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">ExportFreePng</a>(graph, <span class="stringliteral">&#39;scratch21&#39;</span>)</div><div class="ttc" id="namespacetest_html_ad868302fc09ef41ac7788c0403dbf3e1"><div class="ttname"><a href="namespacetest.html#ad868302fc09ef41ac7788c0403dbf3e1">test.ExportFreePng</a></div><div class="ttdeci">def ExportFreePng(graph, filename)</div><div class="ttdef"><b>Definition:</b> <a href="test_8py_source.html#l00009">test.py:9</a></div></div>
+<div class="ttc" id="classLIEGE_1_1Graph_html"><div class="ttname"><a href="classLIEGE_1_1Graph.html">LIEGE.Graph</a></div><div class="ttdoc">Collections of nodes and edges. </div><div class="ttdef"><b>Definition:</b> <a href="LIEGE_8py_source.html#l00071">LIEGE.py:71</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="test_8py.html">test.py</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

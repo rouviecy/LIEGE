@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LIEGE:  Fichier source de include/model/Edge.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LIEGE
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('Edge_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Edge.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Edge_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EDGE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EDGE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="classNode.html">Node</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classEdge.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEdge.html">Edge</a>{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classEdge.html#a91715a2ea8b8478224859ee6ee42ed87">Edge</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classEdge.html#a91715a2ea8b8478224859ee6ee42ed87">Edge</a>(<a class="code" href="classNode.html">Node</a>* <a class="code" href="classEdge.html#acc21aaf3f0f820f91ffebb2d84bb1542">fromNode</a>, <a class="code" href="classNode.html">Node</a>* <a class="code" href="classEdge.html#ad19e9f3aa8e10dc2de9ab9d91d8be076">toNode</a>);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classEdge.html#a91715a2ea8b8478224859ee6ee42ed87">Edge</a>(<a class="code" href="classNode.html">Node</a>* fromNode, <a class="code" href="classNode.html">Node</a>* toNode, std::string <a class="code" href="classEdge.html#a9b45b3e13bd9167aab02e17e08916231">name</a>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::string <a class="code" href="classEdge.html#a7ef596a0c429a1a74709cf14d8fa15d2">ToString</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string <a class="code" href="classEdge.html#a7ef596a0c429a1a74709cf14d8fa15d2">ToString</a>(<span class="keywordtype">bool</span> printNodes);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::string <a class="code" href="classEdge.html#a8041439a2f4f21db2c7bd71f4ba75d3c">ToDot</a>(std::map&lt;Node*, int&gt; nodeToIndex);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string <a class="code" href="classEdge.html#a8facce7acc5e95194c232b9bbd1363d5">GetName</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classEdge.html#a848d2a1fc4b66464a1d85ab8c62d243c">GetFromNode</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classEdge.html#a9d2a308d2dec3e272f2eada24a800abc">GetToNode</a>();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classEdge.html#a9dcb9b43a3d0fa9003d4c1c9d921f6b2">IsValid</a>();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classEdge.html#a9b45b3e13bd9167aab02e17e08916231">   63</a></span>&#160;    std::string <a class="code" href="classEdge.html#a9b45b3e13bd9167aab02e17e08916231">name</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classEdge.html#acc21aaf3f0f820f91ffebb2d84bb1542">   66</a></span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classEdge.html#acc21aaf3f0f820f91ffebb2d84bb1542">fromNode</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classEdge.html#ad19e9f3aa8e10dc2de9ab9d91d8be076">   69</a></span>&#160;    <a class="code" href="classNode.html">Node</a>* <a class="code" href="classEdge.html#ad19e9f3aa8e10dc2de9ab9d91d8be076">toNode</a>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classEdge.html#a8cc8d1cb67b70386f41455552f3a56f4">   72</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classEdge.html#a8cc8d1cb67b70386f41455552f3a56f4">isValid</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classEdge_html_a9d2a308d2dec3e272f2eada24a800abc"><div class="ttname"><a href="classEdge.html#a9d2a308d2dec3e272f2eada24a800abc">Edge::GetToNode</a></div><div class="ttdeci">Node * GetToNode()</div><div class="ttdoc">ToNode getter</div></div>
+<div class="ttc" id="classEdge_html_a9b45b3e13bd9167aab02e17e08916231"><div class="ttname"><a href="classEdge.html#a9b45b3e13bd9167aab02e17e08916231">Edge::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">Label of the edge</div><div class="ttdef"><b>Definition:</b> <a href="Edge_8h_source.html#l00063">Edge.h:63</a></div></div>
+<div class="ttc" id="classEdge_html_ad19e9f3aa8e10dc2de9ab9d91d8be076"><div class="ttname"><a href="classEdge.html#ad19e9f3aa8e10dc2de9ab9d91d8be076">Edge::toNode</a></div><div class="ttdeci">Node * toNode</div><div class="ttdoc">Target of the edge</div><div class="ttdef"><b>Definition:</b> <a href="Edge_8h_source.html#l00069">Edge.h:69</a></div></div>
+<div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdoc">Node of the graph</div><div class="ttdef"><b>Definition:</b> <a href="Node_8h_source.html#l00013">Node.h:13</a></div></div>
+<div class="ttc" id="classEdge_html_a8041439a2f4f21db2c7bd71f4ba75d3c"><div class="ttname"><a href="classEdge.html#a8041439a2f4f21db2c7bd71f4ba75d3c">Edge::ToDot</a></div><div class="ttdeci">std::string ToDot(std::map&lt; Node *, int &gt; nodeToIndex)</div><div class="ttdoc">To string</div></div>
+<div class="ttc" id="classEdge_html"><div class="ttname"><a href="classEdge.html">Edge</a></div><div class="ttdoc">Edge of the graph</div><div class="ttdef"><b>Definition:</b> <a href="Edge_8h_source.html#l00012">Edge.h:12</a></div></div>
+<div class="ttc" id="classEdge_html_acc21aaf3f0f820f91ffebb2d84bb1542"><div class="ttname"><a href="classEdge.html#acc21aaf3f0f820f91ffebb2d84bb1542">Edge::fromNode</a></div><div class="ttdeci">Node * fromNode</div><div class="ttdoc">Source of the edge</div><div class="ttdef"><b>Definition:</b> <a href="Edge_8h_source.html#l00066">Edge.h:66</a></div></div>
+<div class="ttc" id="classEdge_html_a8cc8d1cb67b70386f41455552f3a56f4"><div class="ttname"><a href="classEdge.html#a8cc8d1cb67b70386f41455552f3a56f4">Edge::isValid</a></div><div class="ttdeci">bool isValid</div><div class="ttdoc">If this edge is valid (source and target nodes are not null)</div><div class="ttdef"><b>Definition:</b> <a href="Edge_8h_source.html#l00072">Edge.h:72</a></div></div>
+<div class="ttc" id="classEdge_html_a9dcb9b43a3d0fa9003d4c1c9d921f6b2"><div class="ttname"><a href="classEdge.html#a9dcb9b43a3d0fa9003d4c1c9d921f6b2">Edge::IsValid</a></div><div class="ttdeci">bool IsValid()</div><div class="ttdoc">IsValid getter</div></div>
+<div class="ttc" id="classEdge_html_a7ef596a0c429a1a74709cf14d8fa15d2"><div class="ttname"><a href="classEdge.html#a7ef596a0c429a1a74709cf14d8fa15d2">Edge::ToString</a></div><div class="ttdeci">std::string ToString()</div><div class="ttdoc">To string (source and target nodes will be only light-described)</div></div>
+<div class="ttc" id="classEdge_html_a848d2a1fc4b66464a1d85ab8c62d243c"><div class="ttname"><a href="classEdge.html#a848d2a1fc4b66464a1d85ab8c62d243c">Edge::GetFromNode</a></div><div class="ttdeci">Node * GetFromNode()</div><div class="ttdoc">FromNode getter</div></div>
+<div class="ttc" id="classEdge_html_a91715a2ea8b8478224859ee6ee42ed87"><div class="ttname"><a href="classEdge.html#a91715a2ea8b8478224859ee6ee42ed87">Edge::Edge</a></div><div class="ttdeci">Edge()</div><div class="ttdoc">Default constructor (only for STD containers, do not use it)</div></div>
+<div class="ttc" id="classEdge_html_a8facce7acc5e95194c232b9bbd1363d5"><div class="ttname"><a href="classEdge.html#a8facce7acc5e95194c232b9bbd1363d5">Edge::GetName</a></div><div class="ttdeci">std::string GetName()</div><div class="ttdoc">Name getter</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_5c067e43b62dc1a915e487a737196819.html">model</a></li><li class="navelem"><a class="el" href="Edge_8h.html">Edge.h</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

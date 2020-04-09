@@ -1,0 +1,17 @@
+digraph LIEGE{
+	0[
+		label = "A"
+	]
+	1[
+		label = "B"
+	]
+	2[
+		label = "C"
+	]
+	3[
+		label = "D"
+	]
+	0 -> 1 [label = "A to B"]
+	1 -> 2 [label = "B to C"]
+	2 -> 3 [label = "C to D"]
+}

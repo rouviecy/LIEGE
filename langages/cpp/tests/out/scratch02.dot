@@ -1,0 +1,8 @@
+digraph LIEGE{
+	0[
+		label = "A"
+	]
+	1[
+		label = "B"
+	]
+}
