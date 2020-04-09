@@ -43,6 +43,8 @@ Librairie d'Import Export de Graphes Électroniques
     5. Demander à yEd de placer intelligemment les noeuds et exporter dans un nouveau fichier GraphML
     6. Importer le fichier GraphML et générer un fichier DOT/PNG/SVG avec les positions données par yEd
 
+![](https://raw.githubusercontent.com/rouviecy/LIEGE/master/langages/cpp/Doxygen/html/classGraph__coll__graph.png "Structure des données")
+
 ### Version Python
 
 * Exemple d'utilisation dans `test.py`
@@ -77,3 +79,4 @@ Librairie d'Import Export de Graphes Électroniques
 * Refactoring de la versio Python pour imiter l'API C++
 * Système d'héritage ou d'interface pour enrichir les `Node` et `Edge` par d'autres classes
 * Exemple d'enrichissement par génération de graphes UML, etc.
+* Conversion DOT to GraphML
